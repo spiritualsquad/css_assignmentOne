@@ -8,7 +8,7 @@
   body {
     font-family: 'Lobster', sans-serif;
     line-height: 1.6;
-    background-color: #f0f0f0;
+    background-color: #3c3a5f;
     color: #333;
   }
   
@@ -22,6 +22,12 @@
   
   header h1 {
     font-family: 'Protest Revolution', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+  }
+
+  h1:hover {
+    transform:scale(1.2) /* Rotate the text on hover */
   }
   
   /* Main Styles */
@@ -34,14 +40,21 @@
   /* Article Styles */
   article {
     display: flex;
-    
-    /* background-color: #fff;
+    justify-content: space-evenly;
+    flex-wrap: wrap; 
+    background-color: #84988f;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    margin-bottom: 20px; */
+    margin-bottom: 20px;
+   } 
+  article h2{
+    text-align: center;
+    transition: transform 0.3s ease;
   }
-  
+  article h2:hover{
+    letter-spacing: .1rem; /* Increase letter spacing on hover */
+  }
   /* Footer Styles */
   footer {
     text-align: center;
@@ -53,9 +66,12 @@
   /* Fine Print Styles */
   small {
     font-size: 0.8em;
-    color: #888;
+    color: #888888;
     display: block;
     margin-top: 10px;
+  }
+  small a{
+    color:aqua ;
   }
   
   /* Responsive Styles */
