@@ -32,22 +32,58 @@
   
   /* Main Styles */
   main {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
+    max-width: 1800px;
+    margin: 10px auto;
+    padding: 10px;
   }
   
-  /* Article Styles */
+ 
+  
   article {
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap; 
-    background-color: #84988f;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     border-radius: 8px;
+    background-color: #84988f;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-bottom: 20px;
-   } 
+  }
+  
+  article section {
+    flex: 1;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  article section p {
+    margin-bottom: 20px; /* Add space between paragraphs */
+  }
+  article section:last-child {
+    margin-right: 0;
+  }
+  
+  article section img {
+    width: 50%;
+    max-width: 100%;
+    height: auto;
+    align-self: center;
+    margin-bottom: 10px; /* Add space between the first image and the second image */
+  }
+  
+  article section a {
+    display: flex;
+    justify-content: center;
+  }
+  
+  article section a img {
+    width: 10%; /* Adjust the percentage for the second image */
+    max-width: 100%;
+    height: auto;
+  }
+  
+  
+  
   article h2{
     text-align: center;
     transition: transform 0.3s ease;
